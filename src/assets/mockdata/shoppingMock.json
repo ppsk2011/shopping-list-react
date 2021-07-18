@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "productName": "Laptop Bag",
+        "purchaseDate": "2020-07-17T07:15:09.000Z",
+        "storeName": "BestBuy",
+        "link": "https://www.bestbuy.ca/",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 2,
+        "productName": "Casual T-shirt",
+        "purchaseDate": "2020-08-09T07:20:09.000Z",
+        "storeName": "Costco",
+        "link": "https://www.costco.com/",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    },
+    {
+        "id": 3,
+        "productName": "Mens Jacket",
+        "purchaseDate": "2020-09-10T05:12:20.000Z",
+        "storeName": "Winners",
+        "link": " https://www.winners.ca/",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 4,
+        "productName": "Bracelet",
+        "purchaseDate": "2020-11-15T07:35:20.000Z",
+        "storeName": "Joylukkas",
+        "link": "https://www.joyalukkas.in/",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        "id": 5,
+        "productName": "WD Hard Drive",
+        "purchaseDate": "2021-01-30T09:20:20.000Z",
+        "storeName": "Walmart",
+        "link": "https://www.walmart.com/",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+    }
+]
