@@ -1,5 +1,4 @@
 export const convertIsoDate = (isoDate = '2020-07-17T07:15:09.000Z') => {
-  console.log(isoDate, checkIsoDate(isoDate))
   if (!checkIsoDate(isoDate)) return isoDate;
   const daysArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
   const monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];

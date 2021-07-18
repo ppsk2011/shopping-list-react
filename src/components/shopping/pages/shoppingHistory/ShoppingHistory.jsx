@@ -11,12 +11,8 @@ const ShoppingHistory = () => {
   const [filteredProductsList, setFilteredProductsList] = useState([]);
 
   useEffect(() => {
-    const newProductList = [...productsList];
-    newProductList.map((product) => {
-      product.purchaseDate = convertIsoDate(product.purchaseDate);
-      return product;
-    });
-  }, [productsList]);
+    formatPurchaseDate(productsList);
+  }, []);
 
   const handleProductNameChange = (e, string) => {
     const filterObjTemp = { ...filterObj };
@@ -27,14 +23,14 @@ const ShoppingHistory = () => {
     setFilteredProductsList(newList);
   };
 
-  // const formatPurchaseDate = (prodList) => {
-  //   let newList = [];
-  //   for (let product of prodList) {
-  //     product.purchaseDate = convertIsoDate(product.purchaseDate);
-  //     newList.push(product);
-  //   }
-  //   setProductsList(newList);
-  // };
+  const formatPurchaseDate = (prodList) => {
+    let newList = [];
+    for (let product of prodList) {
+      product.purchaseDate = convertIsoDate(product.purchaseDate);
+      newList.push(product);
+    }
+    setProductsList(newList);
+  };
 
   const checkedFilterObj = () => {
     if (filterObj.storeName || filterObj.productName) {
@@ -45,7 +41,7 @@ const ShoppingHistory = () => {
 
   return (
     <div>
-      <h1>Shopping History</h1>
+      <h1>Shopping List History</h1>
       <div>
         <TableContainer component={Paper}>
           <Table aria-label='Products table'>
@@ -59,12 +55,12 @@ const ShoppingHistory = () => {
             <TableBody>
               <TableRow>
                 <TableCell> <input type='text' name='productName' placeholder='Filter Product'
-                    onChange={(e) => { handleProductNameChange(e, 'productName') }} />
+                  onChange={(e) => { handleProductNameChange(e, 'productName') }} />
                 </TableCell>
                 <TableCell> <input type='text' name='storeName' placeholder='Filter Store'
-                    onChange={(e) => { handleProductNameChange(e, 'storeName') }} />
+                  onChange={(e) => { handleProductNameChange(e, 'storeName') }} />
                 </TableCell>
-                <TableCell/> 
+                <TableCell />
                 {/* <TableCell> <input type='text' name='purchaseDate' placeholder='Filter Purchase Date'
                     onChange={(e) => { handleProductNameChange(e, 'purchaseDate') }} />
                 </TableCell> */}
