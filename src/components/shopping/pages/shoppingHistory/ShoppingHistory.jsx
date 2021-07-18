@@ -46,7 +46,7 @@ const ShoppingHistory = () => {
         <TableContainer component={Paper}>
           <Table aria-label='Products table'>
             <TableHead>
-              <TableRow>
+             <TableRow>
                 <TableCell>Product Name</TableCell>
                 <TableCell>Purchased From</TableCell>
                 <TableCell>Purchase Date</TableCell>

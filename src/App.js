@@ -1,4 +1,4 @@
-import React,{lazy,Suspense} from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router';
 import ShoppingDashboard from './components/shopping/pages/shoppingDashboard/ShoppingDashboard';
 import NavTabs from './components/shopping/NavTabs';
@@ -8,12 +8,12 @@ const ShoppingListAdd = lazy(() => import('./components/shopping/pages/shoppingL
 function App() {
   return (
     <div className='App'>
-      <NavTabs/>
-      <Suspense fallback={<h1>Lazy Loading the component...</h1>}>
+      <NavTabs />
+      <Suspense fallback={<h2>Lazy Loading the component...</h2>}>
         <Switch>
-          <Route exact path='/dashboard'  component={ShoppingDashboard} />
+          <Route exact path='/dashboard' component={ShoppingDashboard} />
           <Route exact path='/history' component={ShoppingHistory} />
-          <Route exact path='/add'component={ShoppingListAdd} />
+          <Route exact path='/add' component={ShoppingListAdd} />
           <Route path='/' component={ShoppingDashboard} />
         </Switch>
       </Suspense>

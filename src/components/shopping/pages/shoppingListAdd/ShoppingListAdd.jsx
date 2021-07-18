@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@material-ui/core';
+import shoppingData from '../../../../assets/mockdata/shoppingMock.json';
 import Button from '@material-ui/core/Button';
 const ShoppingListAdd = () => {
-    const [shoppingList, setShoppingList] = useState([]);
+    const [shoppingList, setShoppingList] = useState(shoppingData);
     const [item, setItem] = useState({});
 
     const handleItemChange = (e, attr) => {
@@ -19,7 +20,7 @@ const ShoppingListAdd = () => {
 
     const handleSubmitProduct = () => {
         const updatedShoppingList = [...shoppingList];
-        updatedShoppingList.push(item);
+        updatedShoppingList.unshift(item);
         setShoppingList(updatedShoppingList);
         setItem({})
     };

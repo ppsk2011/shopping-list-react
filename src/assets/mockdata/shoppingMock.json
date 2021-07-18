@@ -38,5 +38,46 @@
         "storeName": "Walmart",
         "link": "https://www.walmart.com/",
         "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+    },
+    {
+        "id": 6,
+        "productName": "Smartphone",
+        "purchaseDate": "2021-01-17T07:15:09.000Z",
+        "storeName": "BestBuy",
+        "link": "https://www.bestbuy.ca/",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 7,
+        "productName": "Laptop Lenovo",
+        "purchaseDate": "2021-02-09T07:20:09.000Z",
+        "storeName": "Costco",
+        "link": "https://www.costco.com/",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    },
+    {
+        "id": 8,
+        "productName": "Gucci Overcoat",
+        "purchaseDate": "2021-03-10T05:12:20.000Z",
+        "storeName": "Winners",
+        "link": " https://www.winners.ca/",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 9,
+        "productName": "Diamond Pendant",
+        "purchaseDate": "2021-04-16T07:35:20.000Z",
+        "storeName": "Joyalukkas",
+        "link": "https://www.joyalukkas.in/",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        "id": 10,
+        "productName": "Desktop Monitor",
+        "purchaseDate": "2021-05-25T09:20:20.000Z",
+        "storeName": "Walmart",
+        "link": "https://www.walmart.com/",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
     }
+
 ]
