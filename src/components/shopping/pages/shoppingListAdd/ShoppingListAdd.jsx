@@ -26,7 +26,7 @@ const ShoppingListAdd = () => {
     // const urlOpen = (url) => { window.open(url,'New Window','width=1200,height=1200' ) };
     return (
         <div>
-            <h1 >ShoppingListAdd</h1>
+            <h1 >Add a product to your shopping list</h1>
             <div>
                 <TableContainer component={Paper}>
                     <Table>

@@ -10,7 +10,6 @@ export const convertIsoDate = (isoDate = '2020-07-17T07:15:09.000Z') => {
   const year = dateObj.getFullYear();
   const time = `${dateObj.getHours()}:${dateObj.getMinutes()}`;
   const formattedDateString = `${dayName}, ${monthName} ${dayNum}, ${year}, ${time}`;
-  console.log(`Original date:${isoDate}, Formatted date: ${formattedDateString}`);
   return formattedDateString;
 }
 
